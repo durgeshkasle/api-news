@@ -1,24 +1,87 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import { Container } from '@mui/material';
+import {Grid} from '@mui/material';
+import {TextField} from '@mui/material';
+
+
+
+
+
+
+
+function newsApi(search){
+
+
+
+
+
+}
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+    
+
+
+   
+
+    
+    <Container maxWidth="sm">
+
+
+
+      <h1>News App  </h1>
+
+
+
+
+    <Grid container spacing={12}>
+
+    <Grid item xs={6}>
+
+    <TextField id="outlined-basic" label="Search News" placeholder='Enter News' variant="outlined" />
+
+      </Grid>
+
+
+    
+
+
+      <Grid item xs={6}>
+
+
+      <Button variant="contained">Search</Button>
+
+
+      </Grid>
+
+
+
+
+
+
+      </Grid>
+
+
+
+      
+
+
+
+
+
+
+
+
+      </Container>
+
+    
+    </>
+
   );
 }
 
